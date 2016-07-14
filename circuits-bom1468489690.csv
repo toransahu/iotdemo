@@ -1,5 +1,4 @@
-Circuits.io Bill Of Materials
-IDS,#,Component,Footprint,Properties
+Name,#,Component,Footprint,Properties
 D1,1,"LED  A type of diode that illuminates when electricity passes through it. Unlike an RGB Led, this one has a defined color.",Q62902-B153,"650 green[[""green"",""Green""],[""yellow"",""Yellow""],[""orange"",""Orange""],[""blue"",""Blue""],[""red"",""Red""]]"
 R1,1,"Resistor  Resist the flow of electrical energy in a circuit, changing the voltage and current as a result. ",0414/15,220 ohm
-Bat1,1,2 x AA Battery  Standard 2 x AA battery 3.0 V,Battery Connector 2 x AA ,""
+Bat1,1,2 x AA Battery  Standard 2 x AA battery 3.0 V,Battery Connector 2 x AA ,
