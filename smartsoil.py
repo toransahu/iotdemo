@@ -38,12 +38,12 @@ def uplink_soil_condition():
 	#this is where you read the values from arduino
 	reading = bus.read_i2c_block_data(slave,10)
 	# his is the service url
-	url= "http://gradenpyapi.azurewebsites.net/soil/condition"
+	url= "http://46.101.216.198/soilconditions"
 	#this is the formatted timestamp of the information
 	timestamp =dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%dT%H:%M:%S")
 	#this is the actual data format which will be sent, closely resembling json
 	#python dict
-	data = {"Stamp":timestamp, "MoistureContent":reading[0],"Temp":reading[1]}
+	data = {"stamp":timestamp, "moisture":reading[0]}
 	#uploading now to azure
 	#we do not know the index of the data parameter but that it's named parameter
 	resp= http.post(url, data=data) 
